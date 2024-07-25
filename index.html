@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Interactive App</title>
 </head>
+<script>
+  window.onerror = function(message, source, lineno, colno, error) {
+    document.body.innerHTML += '<p>Error: ' + message + '</p>';
+  }
+</script>
 <body>
     <div id="root"></div>
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
